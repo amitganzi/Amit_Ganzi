@@ -1,0 +1,163 @@
+body {
+    background-image: url(background.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#homePage {
+    display: grid;
+    grid-template-areas:'Nav Nav Nav'
+                        'Header Header Header' 
+                        'Main Main Main';
+    margin: 20px;
+    padding: 10px;
+}
+
+#Header_HomePage{
+    grid-area: Header;
+    text-align: center; 
+}
+
+#main_HomePage {
+    grid-area: Main;
+}
+
+#nav_to_contact{
+    grid-area: Nav;
+}
+
+@media only screen  and (max-width:600px) {
+    body {
+        background-color: lightcyan;
+    }
+    #HomePage {
+        display: grid;
+        grid-template-areas: 'Nav' 'Header' 'Main';
+    }
+
+    #contactPage {
+        display: grid;
+        grid-template-areas:'Nav' 'Header' 'Main'
+    }
+} 
+
+#contactPage {
+    display: grid;
+    grid-template-areas:'Nav Nav Nav'
+                        'Header Header Header' 
+                        'Main Main Main';
+    margin: 20px;
+    padding: 10px;
+}
+
+#Header_contactPage{
+    grid-area: Header;
+    text-align: center; 
+}
+
+#nav_to_home{
+    grid-area: Nav;
+} 
+
+#main_contact{
+    grid-area: Main;
+} 
+
+#contact_info{
+    float: left; 
+    font-size: larger; 
+    color: rgb(117, 19, 35);
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+#addings_div{
+    float: right; 
+    font-size: larger; 
+    color: rgb(117, 19, 35);
+    font-weight: bold;
+    margin-right: 15%;
+}
+
+header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(146, 23, 148); 
+    font-size: xxx-large; 
+    padding-bottom: 2%;
+}
+
+footer{
+    grid-area: Header;
+    color: rgb(128, 8, 124); 
+    font-size: larger; 
+    padding-bottom: 2%;
+}
+
+nav{
+    text-align: left; 
+    color: rgb(216, 12, 209); 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    padding: 1%; 
+    background-color: rgb(205, 174, 232); 
+    border: 2px solid white;
+    margin-bottom: 2%;
+}
+
+a {
+    padding: 14px;
+}
+
+a:hover { 
+    color: white;
+}
+
+a.active{
+    background-color: white;
+    color: rgb(128, 8, 124); 
+}
+
+#submit_div{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#submit{
+    color: rgb(216, 12, 46);
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.menu{
+    padding-left: 10%;
+    padding-bottom: 2%;
+    color: rgb(117, 19, 35);
+    border: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+li {
+    display: inline-block; 
+    margin-right: 10%;
+}
+
+.flower_img {
+    margin-right: 20%; 
+    margin-top: 10%;
+    height: 150px;
+    width: 150px;
+}
+.animation_icon{
+    width: 20px;
+    height: 20px;
+    float: right;
+    animation: jump .5s linear alternate 10;
+    vertical-align: middle;
+    margin-inline: 10px;
+}
+
+
+@keyframes jump{
+    0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+    40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+    100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
