@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styling.css">
     <title>Bloom- Home Page</title>
+    <script  defer src="../static/styling.js"></script>
 </head>
 
 
 <body>
     <div id="homePage">
     <nav id="nav_to_contact">
-        <a href="homePage.html" class="active">Home</a>
+        <a href="homePage.html">Home</a>
         <a href="contact.html">Contact Us</a>
-        <a href="URL">About Us</a>
-        <img src="../static/facebook_icon.jpg" alt="f_icon" class="animation_icon">
-        <img src="../static/instagram_icon.jpg" alt="insta_icon" class="animation_icon">
     </nav>
     
         <div id="Header_HomePage">
@@ -26,14 +24,20 @@
         <footer>
             This is an online flower shop, you can make your own bouquets or <br>
             you can choose a bouquet that we design. <br>
-            We make deliveries all over the country, just choose a bouque and we'll be there!
+            We make deliveries all over the country, just choose a bouque and we'll be there! <br><br>
+            <b>Check out our store in Beer Sheva: </b></Check><br><img src="../static/flowerShop.jpg" alt="FlowerShop" id="flowerShop">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
         </footer>
         </div>
 
 
         <div id="main_HomePage">
     <b><div class="menu">
-       <u><p style="font-size: larger;">Our Bouquets:</p></u> 
+       <p class="ourBouquets">Our Bouquets:</p><br><br> 
        <ul>
             <li>White Bloom <br>
                 <img src="../static/whiteBloom.jpg" alt="whiteBloom" class="flower_img">
@@ -53,7 +57,7 @@
 
 
     <div class="menu">
-        <u><p style="font-size: larger;">Our Flowers:</p></u> 
+        <p class="ourFlowers">Our Flowers:</p><br><br>
         <ul>
              <li>Red Rose <br>
                  <img src="../static/rose.jpg" alt="rose" class="flower_img">
@@ -67,9 +71,9 @@
              <li>Gypsophila <br>
                  <img src="../static/Gypsophila.jpg" alt="Gypsophila" class="flower_img">
              </li>
- 
         </ul>
      </div></b>
+
      </div>
     </div>
 </body>
