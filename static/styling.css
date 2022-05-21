@@ -34,7 +34,7 @@ body {
     grid-area: Nav;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 1000px) {
     #HomePage {
         display: grid;
         grid-template-areas: 'Nav' 'Header' 'Main';
@@ -42,9 +42,46 @@ body {
 
     #contactPage {
         display: grid;
-        grid-template-areas:'Nav' 'Header' 'Main'
+        grid-template-areas:'Nav' 'Header' 'Main';
     }
+
+    #contact_info{
+        float: left;
+        margin-left: 20%;
+    }
+
+    #addings_div{
+        margin-left: 20%;
+        margin-top: 7%;
+        padding-right: 20%;
+        justify-content: left;
+    }
+
+
+    #adding{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #inst_fb{
+        margin-left: 30%;
+
+    }
+
+    .modal-content {
+        width: 100%;
+      }
 } 
+
+@media only screen and (max-width: 750px) {
+    #addings_div{
+        margin-left: 20%;
+        margin-top: 7%;
+        padding-right: 0%;
+        justify-content: left;
+    }
+
+}
 
 #contactPage {
     display: grid;
@@ -89,6 +126,10 @@ body {
     margin-right: 7%;
 }
 
+#addings{
+    width: 400px;
+    height: 100px;
+}
 #reason1 {margin-right: 10.6%;}
 #reason3 {margin-right: 10.2%;}
 #reason4 {margin-right: 77%;}
@@ -259,11 +300,6 @@ li {
     cursor: pointer;
   }
   
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
 
 
   #inst_fb {
